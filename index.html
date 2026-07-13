@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skill Forge · AI Product & Design Skill Workspace</title>
+  <meta name="description" content="Build AI Skills That Grow with Your Team · 让团队经验，持续成长为 AI 能力">
+  <meta http-equiv="refresh" content="2.5; url=demo.html">
+  <link rel="canonical" href="demo.html">
+  <style>
+    @font-face{font-family:'Sans';src:local('Helvetica'),local('PingFang SC')}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Helvetica Neue',sans-serif;
+      background:radial-gradient(ellipse at top,#1a1a2e 0%,#0d0d14 60%);
+      color:#e8e8ed;min-height:100vh;display:flex;align-items:center;justify-content:center;
+      padding:2rem;line-height:1.7;
+    }
+    .card{max-width:560px;width:100%;text-align:center;padding:3rem 2rem}
+    .badge{
+      display:inline-block;padding:0.3rem 0.9rem;border-radius:100px;
+      background:rgba(240,165,0,0.12);color:#f0a500;
+      font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;
+      border:1px solid rgba(240,165,0,0.3);margin-bottom:1.75rem;
+    }
+    h1{font-size:2.5rem;font-weight:700;letter-spacing:-0.02em;margin-bottom:0.6rem;line-height:1.15}
+    h1 span{color:#f0a500}
+    .subtitle{font-size:0.95rem;color:#8b8b9e;margin-bottom:1rem;font-family:monospace;letter-spacing:0.1em;text-transform:uppercase}
+    .slogan{font-size:1.05rem;color:#e8e8ed;margin-bottom:2.5rem;font-weight:500}
+    .loader{display:flex;align-items:center;justify-content:center;gap:0.5rem;margin-bottom:1.25rem;color:#8b8b9e;font-size:0.85rem}
+    .spinner{
+      width:14px;height:14px;border:2px solid rgba(240,165,0,0.2);
+      border-top-color:#f0a500;border-radius:50%;
+      animation:spin 0.8s linear infinite;
+    }
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .progress{width:100%;max-width:320px;height:3px;background:rgba(255,255,255,0.06);border-radius:2px;margin:0 auto 1.5rem;overflow:hidden}
+    .progress-bar{height:100%;background:linear-gradient(90deg,#f0a500,#16697a);width:0;animation:fill 2.4s ease-out forwards;border-radius:2px}
+    @keyframes fill{to{width:100%}}
+    .hint{font-size:0.8rem;color:#8b8b9e;margin-top:1.5rem}
+    .hint a{color:#f0a500;text-decoration:none}
+    .hint a:hover{text-decoration:underline}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="badge">TRAE AI 创造力大赛 · 提交作品</div>
+    <h1><span>Skill Forge</span></h1>
+    <div class="subtitle">AI Product &amp; Design Skill Workspace</div>
+    <div class="slogan">让团队经验，持续成长为 AI 能力</div>
+    <div class="loader"><div class="spinner"></div>正在加载 9 视图演示…</div>
+    <div class="progress"><div class="progress-bar"></div></div>
+    <div class="hint">2.5 秒后自动跳转 · 没跳转？<a href="demo.html">点此手动打开</a></div>
+  </div>
+  <script>
+    // 兜底:如果浏览器禁用 meta refresh,JS 跳转
+    setTimeout(function(){ window.location.href = 'demo.html'; }, 2500);
+  </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Skill Forge Demo</title>
+  <meta http-equiv="refresh" content="0; url=demo.html">
+  <link rel="canonical" href="demo.html">
+</head>
+<body>
+  <p>正在打开 Skill Forge Demo… <a href="demo.html">点此手动打开</a></p>
+</body>
+</html>
